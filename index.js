@@ -219,3 +219,92 @@ console.log("Total Fahrenheit:", tot_temperature_in_fahrenheit);
 console.log("Total Celsius:", tot_temperature_in_celsius);
 console.log("Average Fahrenheit:", avg_temperature_in_fahrenheit);
 console.log("Average Celsius:", avg_temperature_in_celsius);
+// Fahrenheit → Celsius
+function fahrenheitToCelsius(tempInFahrenheit) {
+    return (tempInFahrenheit - 32) * 5 / 9;
+}
+
+// Celsius → Fahrenheit
+function celsiusToFahrenheit(tempInCelsius) {
+    return (tempInCelsius * 9 / 5) + 32;
+}
+
+
+// Total temperature in Fahrenheit
+const tot_temperature_in_fahrenheit =
+    day1TempF +
+    celsiusToFahrenheit(day2TempC) +
+    day3TempF +
+    celsiusToFahrenheit(day4TempC) +
+    day5TempF +
+    celsiusToFahrenheit(day6TempC) +
+    day7TempF +
+    celsiusToFahrenheit(day8TempC) +
+    day9TempF +
+    celsiusToFahrenheit(day10TempC) +
+    day11TempF +
+    celsiusToFahrenheit(day12TempC) +
+    day13TempF +
+    celsiusToFahrenheit(day14TempC) +
+    day15TempF +
+    celsiusToFahrenheit(day16TempC) +
+    day17TempF +
+    celsiusToFahrenheit(day18TempC) +
+    day19TempF +
+    celsiusToFahrenheit(day20TempC) +
+    day21TempF +
+    celsiusToFahrenheit(day22TempC) +
+    day23TempF +
+    celsiusToFahrenheit(day24TempC) +
+    day25TempF +
+    celsiusToFahrenheit(day26TempC) +
+    day27TempF +
+    celsiusToFahrenheit(day28TempC) +
+    day29TempF +
+    celsiusToFahrenheit(day30TempC);
+
+
+// Total temperature in Celsius
+const tot_temperature_in_celsius =
+    fahrenheitToCelsius(day1TempF) +
+    day2TempC +
+    fahrenheitToCelsius(day3TempF) +
+    day4TempC +
+    fahrenheitToCelsius(day5TempF) +
+    day6TempC +
+    fahrenheitToCelsius(day7TempF) +
+    day8TempC +
+    fahrenheitToCelsius(day9TempF) +
+    day10TempC +
+    fahrenheitToCelsius(day11TempF) +
+    day12TempC +
+    fahrenheitToCelsius(day13TempF) +
+    day14TempC +
+    fahrenheitToCelsius(day15TempF) +
+    day16TempC +
+    fahrenheitToCelsius(day17TempF) +
+    day18TempC +
+    fahrenheitToCelsius(day19TempF) +
+    day20TempC +
+    fahrenheitToCelsius(day21TempF) +
+    day22TempC +
+    fahrenheitToCelsius(day23TempF) +
+    day24TempC +
+    fahrenheitToCelsius(day25TempF) +
+    day26TempC +
+    fahrenheitToCelsius(day27TempF) +
+    day28TempC +
+    fahrenheitToCelsius(day29TempF) +
+    day30TempC;
+
+
+// Average temperatures
+const avg_temperature_in_fahrenheit = tot_temperature_in_fahrenheit / 30;
+
+const avg_temperature_in_celsius = tot_temperature_in_celsius / 30;
+
+
+console.log("Total Fahrenheit:", tot_temperature_in_fahrenheit);
+console.log("Total Celsius:", tot_temperature_in_celsius);
+console.log("Average Fahrenheit:", avg_temperature_in_fahrenheit);
+console.log("Average Celsius:", avg_temperature_in_celsius);
